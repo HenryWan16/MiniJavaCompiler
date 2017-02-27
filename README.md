@@ -11,7 +11,6 @@ Java, C, Compilers Principles, Object-Oriented, Design Pattern(Observer Pattern)
 + As its name illustrates, SLP is very simple in that it contains no control structures as found in most languages.
 + Generally speaking, there are two ways to run a program: interpretation and compilation. In this part, you will first write an interpreter for SLP, and in the next part, you will write a compiler so that you can gain deeper understanding of both the two ways.
 + Basically, an interpreter runs a given program online, that is, it analyzes the program and mimic the behaviour of the program during the analysis. As SLP has assignment statement like x:=e, so the interpreter must abstract the memory, which keeps track of the current value of a variable. There are several ways to implement an abstract memory: you can use a imperative memory, or you can use functional memory.
-
 + In an imperative memory, when a variable x is assigned a new value v, the memory chunk for x will be updated (thus, the old memory state is modified); whereas in a functional memory, when some variable is changed, a new memory is generated without modifying the old memory. Thus, a functional memory model, and generally speaking, a functional programming style, can make the code much more elegant and maintainable.
 
 2. abstract syntax trees and elaborator
